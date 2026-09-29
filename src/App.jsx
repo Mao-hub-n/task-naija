@@ -8,7 +8,7 @@ import product from "./data/product.json";
 import Orders from "./pages/Orders";
 import OrderDetails from "./pages/OrderDetails";
 import About   from "./pages/About";
-import Landing from "./pages/Landing";
+// import Landing from "./pages/Landing";
 import Footer from "./pages/Footer";
 
 function Home({ addToCart }) {
@@ -41,6 +41,37 @@ function Home({ addToCart }) {
   return (
     <div>
       {/* <h1>Welcome to Task Naija</h1> */}
+      <div className="home-page">
+
+  {/* Hero */}
+  <section className="home-hero">
+    <div className="hero-content">
+
+      <p className="hero-label">
+        WELCOME TO TASK NAIJA 🇳🇬
+      </p>
+
+      <h1>
+        Shop Smart.
+        <br />
+        Shop Naija.
+      </h1>
+
+      <p className="hero-description">
+        Discover products you'll love and enjoy a
+        simple shopping experience from start to finish.
+      </p>
+
+      <Link
+        to="/"
+        className="hero-button"
+      >
+        Shop Now
+      </Link>
+
+    </div>
+  </section>
+  </div>
 
       <input
         className="search"
@@ -295,9 +326,7 @@ if (existingProduct) {
         path="/orders/:id"
         element={<OrderDetails/>}/>
 
-        <Route 
-        path="/landing" 
-        element={<Landing/>}/>
+      
 
         <Route
         path="/about" 
