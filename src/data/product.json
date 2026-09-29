@@ -1,0 +1,75 @@
+
+ [
+    {"id": 1,
+     "name": "Nike Air Max",
+     "price": 100,
+     "category": "Shoes",
+     "image":"/src/assets/images/jordan.jpg"
+    },
+    {"id": 2,
+     "name": "Basketball",
+     "price": 50,
+     "category":"Sport",
+     "image": "/src/assets/images/basketball.jpg"
+    },
+    {"id": 3,
+     "name": "Apple Gift Card",
+     "price": 100,
+     "category":"Gifts",
+     "image": "/src/assets/images/applegift.jpg"
+    },
+    {"id": 4,
+     "name": "Allstars",
+     "price": 20,
+     "category": "Shoes",
+     "image": "/src/assets/images/allstar.jpg"
+    },
+    {"id": 5,
+     "name": "Bajaj",
+     "price": 2000,
+     "category": "Vechicle",
+     "image": "/src/assets/images/bajaj1.jpg"
+    }, 
+    {"id": 6,
+     "name": "Plushie",
+     "price": 200,
+     "category":"Toys",
+     "image": "/src/assets/images/miku.jpg"
+    },
+    {"id": 7,
+     "name": "Iphone 13",
+     "price": 200,
+     "category":"Electronics",
+     "image": "/src/assets/images/13.jpg"
+    },      
+    {"id": 8,
+     "name": "Hellstar",
+     "price": 150,
+     "category":"Clothing",
+     "image": "/src/assets/images/hoodie.jpg"
+    },
+    {"id": 9,
+     "name": "Hellstar",
+     "price": 300,
+     "category":"Clothing",
+     "image": "/src/assets/images/hellstarcop.jpg"
+    },
+    {"id": 10,
+     "name": "Stanley",
+     "price": 150,
+     "category":"Home & Kitchen",
+     "image": "/src/assets/images/stanley.jpg"
+    },
+    {"id": 11,
+     "name": "Hellstar",
+     "price": 20,
+     "category":"Clothing",
+     "image": "/src/assets/images/hellstar.jpg"
+    },
+    {"id": 12,
+     "name": "Creeper",
+     "price": 20,
+     "category":"Toys",
+     "image": "/src/assets/images/creeper.jpg"
+    }                                                                                 
+]
