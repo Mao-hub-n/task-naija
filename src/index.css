@@ -1203,3 +1203,89 @@ nav a:hover{
     display: flex;
   }
 }
+
+.custom-button{
+  --green: #16a34a;
+  --blue: #2563eb;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 32px;
+  border: 0;
+  border-radius: 999px;
+  overflow: hidden;
+  isolation: isolate;
+  font: 650 15px/1 system-ui, sans-serif;
+  color: #fff;
+  cursor: pointer;
+  background: transparent;
+}
+
+.custom-button::before,
+.custom-button::after{
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 50%;
+  z-index: -1;
+  transition: transform 0.4s ease;
+}
+
+.custom-button::before{
+  background: var(--green);
+}
+
+.custom-button::after{
+  left: 50%;
+  background: var(--blue);
+}
+
+.custom-button:hover::before,
+.custom-button:focus-visible::before{
+  transform: translateX(100%);
+}
+
+.custom-button:hover::after,
+.custom-button:focus-visible::after{
+  transform: translateX(-100%);
+}
+
+.custom-button span{
+  position: relative;
+  z-index: 1;
+}
+/* 
+.custom-button{
+--green: #16a34a;
+--blue: #2563eb;
+display: inline-flex;
+align-items: center;
+gap: 8px;
+padding: 13px 28px;
+border: 0;
+border-radius: 999px;
+font: 650 15px/1 system-ui, sans-serif;
+letter-spacing: 0.01em;
+color: #fff;
+cursor: pointer;
+background: linear-gradient(90deg,
+var(--green) 50%,
+var(--blue) 50%);
+background-size: 200% 100%;
+background-position: 0% 50%;
+box-shadow: 0 6px 16px rgba(37, 99, 235, 0.22);
+transition: box-shadow 0.25s ease,
+background-position 0.35s ease,
+transform 0.2s ease;
+}
+
+.custom-button:hover,
+.custom-button:focus-visible{
+  background-position: 100% 50%;
+  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.28);
+  transform: translateY(-1px);
+}
+.custom-button:active{
+  transform: translateY(0) scale(0.98);
+} */

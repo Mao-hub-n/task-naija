@@ -42,11 +42,6 @@ function Navbar ({cart})  {
         About
       </Link>
 
-      <Link to="/landing"
-      onClick={() => setMenuOpen(false)}>
-        Landing
-      </Link>
-
       <Link
         to="/cart"
         className="navbar-cart"
