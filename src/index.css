@@ -1207,6 +1207,7 @@ nav a:hover{
 .custom-button{
   --green: #16a34a;
   --blue: #2563eb;
+  --mix:#0f8a7a;
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -1219,20 +1220,22 @@ nav a:hover{
   font: 650 15px/1 system-ui, sans-serif;
   color: #fff;
   cursor: pointer;
-  background: transparent;
+  background: var(--mix);
 }
 
 .custom-button::before,
 .custom-button::after{
   content: "";
   position: absolute;
-  inset: 0 auto 0 0;
+  top: 0;
+  bottom: 0;
   width: 50%;
   z-index: -1;
-  transition: transform 0.4s ease;
+  transition: wdth 0.45s ease, opacity 0.45s ease;
 }
 
 .custom-button::before{
+  right: 0;
   background: var(--green);
 }
 
@@ -1241,14 +1244,15 @@ nav a:hover{
   background: var(--blue);
 }
 
-.custom-button:hover::before,
-.custom-button:focus-visible::before{
-  transform: translateX(100%);
-}
 
+
+.custom-button:hover::before,
+.custom-button:focus-visible::before
 .custom-button:hover::after,
 .custom-button:focus-visible::after{
-  transform: translateX(-100%);
+  /* transform: translateX(100%); */
+  width: 100%;
+  opacity: 0.55s;
 }
 
 .custom-button span{
