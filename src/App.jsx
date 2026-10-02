@@ -11,6 +11,17 @@ import About   from "./pages/About";
 import Button from "./components/Button";
 import Footer from "./pages/Footer";
 
+// 
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import ForgotPassword from "./pages/ForgotPassword";
+import Profile from "./pages/Profile";
+import AdminLogin from "./pages/admin/AdminLogin";
+import AdminDashboard from "./pages/admin/AdminDashboard";
+import AdminProducts from "./pages/admin/AdminProducts";
+import AdminOrders from "./pages/admin/AdminOrders";
+import AdminUsers from "./pages/admin/AdminUsers";
+
 function Home({ addToCart }) {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
@@ -281,7 +292,6 @@ if (existingProduct) {
   return (
     <BrowserRouter>
       <Navbar cart={cart} />
-      <Button/>
 
       <Routes>
         <Route
@@ -332,6 +342,54 @@ if (existingProduct) {
         <Route
         path="/about" 
         element= {<About />}/>
+
+        
+<Route path="/login" element={<Login />} />
+
+<Route
+  path="/register"
+  element={<Register />}
+/>
+
+<Route
+  path="/forgot-password"
+  element={<ForgotPassword />}
+/>
+
+<Route
+  path="/profile"
+  element={<Profile />}
+/>
+
+<Route
+  path="/orders"
+  element={<Orders />}
+/>
+
+<Route
+  path="/admin/login"
+  element={<AdminLogin />}
+/>
+
+<Route
+  path="/admin"
+  element={<AdminDashboard />}
+/>
+
+<Route
+  path="/admin/products"
+  element={<AdminProducts />}
+/>
+
+<Route
+  path="/admin/orders"
+  element={<AdminOrders />}
+/>
+
+<Route
+  path="/admin/users"
+  element={<AdminUsers />}
+/>
       </Routes>
       <Footer/>
     </BrowserRouter>

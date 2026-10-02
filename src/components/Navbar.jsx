@@ -60,6 +60,15 @@ function Navbar ({cart})  {
         )}
       </Link>
 
+      <Link to="/login" onClick={() => setMenuOpen(false)}>
+  Login
+</Link>
+
+<Link to="/register" onClick={() => setMenuOpen(false)}>
+  Register
+</Link>
+
+
     </div>
 
   </div>

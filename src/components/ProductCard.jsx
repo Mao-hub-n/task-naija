@@ -4,7 +4,7 @@ import Button from "./Button";
 function ProductCard ({product, addToCart})  {
   return (
     <div className="product-card">
-        <img src={product.image} alt={product.name}/>
+        <img className="product-card-image" src={product.image} alt={product.name}/>
         <p product-category>
           {product.category}</p>   
       <Link to = {`/product/${product.id}`}>
