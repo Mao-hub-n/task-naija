@@ -69,7 +69,8 @@ return (
                 </p>
     
                 <Link
-                  to={`/products/${product.id}`}
+                
+                  to={`/product/${product.id}`}
                 >
                   View Product
                 </Link>

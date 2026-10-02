@@ -1,6 +1,8 @@
 import {useParams, Link } from "react-router-dom"
 import products from "../data/product.json"
 import { useState } from "react";
+import Button from "../components/Button";
+import Buttons from "../components/BackButton";
 
 function ProductDetails  ({addToCart}) {
   const {id} = useParams();
@@ -33,28 +35,28 @@ function ProductDetails  ({addToCart}) {
             </p>
            
            <div className="details-quantity">
-            <button 
+            <Button 
             onClick={() =>
               setQuantity(Math.max(1, quantity - 1))
             }>
               -
-            </button>
+            </Button>
 
             <span>{quantity}</span>
-            <button 
+            <Button 
             onClick={() =>
               setQuantity( quantity + 1)
             }>
               +
-            </button>
+            </Button>
 
            </div>
-            <button onClick={handleAddToCart}>
+            <Button onClick={handleAddToCart}>
                 Add {quantity} to cart
-            </button>
+            </Button>
 
             <Link to="/">
-            <button className="back-button">Back</button>
+            <Buttons className="back-button">Back</Buttons>
             </Link>
         </div>
     </div>
