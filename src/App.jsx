@@ -184,14 +184,14 @@ function Cart({
                   </button>
                 </div>
 
-                <button
+                <Button
                   className="remove"
                   onClick={() =>
                     removeFromCart(product.id)
                   }
                 >
                   Remove
-                </button>
+                </Button>
               </div>
             ))}
           </div>
